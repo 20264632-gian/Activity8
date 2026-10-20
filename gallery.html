@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarate's Creative</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        html, body {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden; 
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dce9e4; 
+            color: #010202;
+            
+            
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #7c7f8a;
+            color: rgb(12, 12, 12);
+            flex-shrink: 0; 
+        }
+
+        .top-header {
+            height: 105px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 18px;
+            border-bottom: 1px solid #15745d;
+        }    
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            justify-content: center; 
+            padding-top: 15px;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            border: 3px solid #b7d8c9;
+            object-fit: cover;
+        }
+
+        .brand {
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            height: 65px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 23px 45px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        nav a:hover, nav a.active {
+            color: white;
+        }
+
+        
+        main {
+            padding: 20px 5%;
+            display: flex;
+            justify-content: center;
+            flex: 1;          
+            overflow: hidden; 
+        }
+
+        
+        .portfolio-container {
+            background-color: #dceae2; 
+            width: 100%;
+            max-width: 1100px;
+            border-radius: 8px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        
+        .portfolio-container::-webkit-scrollbar {
+            width: 8px;
+        }
+        .portfolio-container::-webkit-scrollbar-thumb {
+            background: #7c7f8a;
+            border-radius: 4px;
+        }
+
+        .portfolio-container h1 {
+            font-size: 28px;
+            color: #263c38;
+            margin-bottom: 10px;
+            flex-shrink: 0;
+        }
+
+        .portfolio-container p.subtitle {
+            font-size: 14px;
+            color: #60756a;
+            margin-bottom: 30px;
+            flex-shrink: 0;
+        }
+
+        .profiles-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 30px 20px;
+            justify-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .profile-card img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #14d491;
+            margin-bottom: 12px;
+            background-color: #043529; 
+        }
+
+        .profile-card span {
+            font-size: 12px;
+            font-weight: bold;
+            color: #444;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        
+        footer {
+             background-color: #095346;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 900px) {
+            .profiles-grid {
+                grid-template-columns: repeat(3, 1fr); 
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .profiles-grid {
+                grid-template-columns: repeat(2, 1fr); 
+            }
+            .profile-card img {
+                width: 90px;
+                height: 90px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <img src="mylogo.png" class="logo" alt="Logo">
+            <div class="brand">Zarate's Creatives</div>
+        </div>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="gallery.html" class="active">GALLERY</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="portfolio-container">
+            <h1>Creative Portfolio</h1>
+            <p class="subtitle">A curated look at our latest collections and artistic ventures.</p>
+            
+            <div class="profiles-grid">
+                <!-- Row 1 -->
+                <div class="profile-card">
+                    <img src="profile1.png" alt="Project 01">
+                    <span>Project 01</span>
+                </div>
+                <div class="profile-card">
+                    <img src="profile2.png" alt="Project 02">
+                    <span>Project 02</span>
+                </div>
+                <div class="profile-card">
+                    <img src="profile3.png" alt="Project 03">
+                    <span>Project 03</span>
+                </div>
+                <div class="profile-card">
+                    <img src="profile4.png" alt="Project 04">
+                    <span>Project 04</span>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="profile-card">
+                    <img src="profile5.png" alt="Project 05">
+                    <span>Project 05</span>
+                </div>
+                <div class="profile-card">
+                    <img src="profile6.png" alt="Project 06">
+                    <span>Project 06</span>
+                </div>
+                <div class="profile-card">
+                    <img src="profile7.png" alt="Project 07">
+                    <span>Project 07</span>
+                </div>
+                <div class="profile-card">
+                    <img src="profile8.png" alt="Project 08">
+                    <span>Project 08</span>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="profile-card">
+                    <img src="profile9.png" alt="Project 09">
+                    <span>Project 09</span>
+                </div>
+                <div class="profile-card">
+                    <img src="profile10.png" alt="Project 10">
+                    <span>Project 10</span>
+                </div>
+                <div class="profile-card">
+                    <img src="profile11.png" alt="Project 11">
+                    <span>Project 11</span>
+                </div>
+                <div class="profile-card">
+                    <img src="profile12.png" alt="Project 12">
+                    <span>Project 12</span>
+                </div>
+            </div>
+        </section> 
+    </main>
+
+    <footer>
+        © 2026 Zarate's Creatives 
+    </footer>
+
+</body>
+</html>

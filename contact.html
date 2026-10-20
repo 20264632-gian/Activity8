@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarate's Creatives - Contact</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dce9e4;
+            color: #010202;
+        }
+
+
+      
+        header {
+            background-color: #7c7f8a;
+            color: rgb(12, 12, 12);
+        }
+
+
+        .top-header {
+            height: 105px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 18px;
+            border-bottom: 1px solid #15745d;
+        }
+
+
+        .logo {
+             width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            border: 3px solid #b7d8c9;
+            object-fit: cover;
+        }
+        
+
+
+        .brand {
+             font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+
+        
+        nav {
+             height: 65px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            
+
+        nav a {
+        
+           color: white;
+            text-decoration: none;
+            padding: 23px 45px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background-color: #0b0c0c;
+        }
+
+
+        main {
+            padding: 55px 7%;
+        }
+
+
+        .contact-container {
+            max-width: 1200px;
+            min-height: 530px;
+            margin: auto;
+            padding: 40px 35px;
+            background-color: #eef5f1;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+        }
+
+
+        .contact-heading {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+
+        .contact-heading h1 {
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+
+
+        .contact-heading p {
+            font-size: 15px;
+            color: #46514c;
+        }
+
+
+        
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 45px;
+        }
+
+
+        
+        .contact-details {
+            padding-top: 15px;
+        }
+
+
+        .contact-details h2 {
+            font-size: 20px;
+            color: #095346;
+            margin-bottom: 25px;
+        }
+
+
+        .detail {
+            margin-bottom: 22px;
+        }
+
+
+        .detail h3 {
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+        .detail p,
+        .detail a {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #020202;
+            overflow-wrap: anywhere;
+        }
+
+
+        .detail a {
+            text-decoration: none;
+        }
+        .detail a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-form label {
+            display: block;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            margin-top: 12px;
+         }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 1.2vh 12px;
+            font-family: inherit;
+            font-size: clamp(12px, 1.9vh, 15px);
+            color: #095346;
+            background-color: #fff;
+            border: 1px solid #d6d0f5;
+            border-radius: 6px;
+            margin-bottom: 1.8vh;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: 2px solid #71827e;
+        }
+
+        .contact-form textarea {
+            height: 100px;
+            resize: vertical;
+             }
+        .contact-form button {
+            width: 100%;
+            padding: 1.4vh;
+            font-size: clamp(12px, 1.9vh, 15px);
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: white;
+            background-color: #095346;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #0b0c0c;
+        }
+
+        footer {
+             background-color: #095346;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            font-size: 14px;
+        }
+
+
+        
+        @media (max-width: 700px) {
+            .top-header {
+                gap: 10px;
+            }
+
+
+            .logo {
+                width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            border: 3px solid #b7d8c9;
+            object-fit: cover;
+            }
+
+
+            .brand {
+                  font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            }
+
+
+            nav a {
+               color: white;
+            text-decoration: none;
+            padding: 23px 45px;
+            font-size: 17px;
+            font-weight: bold;
+            }
+
+
+            main {
+                padding: 55px 7%;
+            }
+
+
+            .contact-container {
+                padding: 30px 20px;
+            }
+
+
+            .contact-heading h1 {
+                font-size: 24px;
+            }
+
+
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+
+            .contact-details h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    
+    <header>
+        <div class="top-header">
+            <img src="mylogo.png" class="logo" alt="Logo">
+
+
+            <div class="brand">
+                ZARATE'S CREATIVES
+            </div>
+        </div>
+
+
+        
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="contact.html" class="active">CONTACT</a>
+        </nav>
+    </header>
+
+
+    
+    <main>
+        <section class="contact-container">
+
+
+            <div class="contact-heading">
+                <h1>Get In Touch</h1>
+                <p>
+                    Have a question or a project in mind?
+                    Reach out to us below.
+                </p>
+            </div>
+
+
+            <div class="contact-content">
+
+
+                
+                <div class="contact-details">
+                    <h2>CONTACT DETAILS</h2>
+
+
+                    <div class="detail">
+                        <h3>FACEBOOK</h3>
+                        <p>Gian Gerald Ercilla</p>
+                    </div>
+
+
+                    <div class="detail">
+                        <h3>INSTAGRAM</h3>
+                        <p>@itzme.g3rald</p>
+                    </div>
+
+
+                    <div class="detail">
+                        <h3>PHONE NUMBER</h3>
+                        <p>09307009475</p>
+                    </div>
+                </div>
+
+
+                
+                <form class="contact-form"
+                      action="mailto:YOUR-EMAIL@example.com"
+                      method="post"
+                      enctype="text/plain">
+
+
+                    <label for="fullname">FULL NAME</label>
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="Full Name"
+                        placeholder="Your Name"
+                        required>
+
+
+                    <label for="email">EMAIL ADDRESS</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="Email"
+                        placeholder="email@example.com"
+                        required>
+
+
+                    <label for="message">COMMENTS / MESSAGE</label>
+                    <textarea
+                        id="message"
+                        name="Message"
+                        placeholder="Write your message here..."
+                        required></textarea>
+
+
+                    <button type="submit">SEND MESSAGE</button>
+                </form>
+
+
+            </div>
+        </section>
+    </main>
+
+
+    
+    <footer>
+         © 2026 Zarate's Creatives 
+    </footer>
+
+
+</body>
+</html>
